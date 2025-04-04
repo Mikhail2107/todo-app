@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRef, useState } from 'react';
 import Filters from '../Filters/Filters';
 import TodoList from '../TodoList/TodoList';
