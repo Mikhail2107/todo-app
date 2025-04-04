@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import TodoItem from '../TodoItem/TodoItem';
 import { ContextMenuProps, TodoItemProps } from '../App/App';
