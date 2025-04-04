@@ -1,0 +1,65 @@
+.todo-input__container {
+  width: 100%;
+}
+.todo-input__box {
+  height: 5vw;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin: 0 auto;
+  border-bottom: 1px solid #dadada;
+}
+.todo-input__button {
+  grid-column: 1/2;
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.todo-input__button::after {
+  content: '';
+  position: absolute;  
+  width: .8em;
+  height: .8em;
+  transform: rotate(-45deg);
+  left: 40%;
+  top: 40%;
+  border: solid #dadada;
+  border-width: 0px 0px 3px 3px;  
+  transition: transform 0.3s;
+}
+.button--rotate.todo-input__button::after {
+  content: '';
+  position: absolute;  
+  width: .8em;
+  height: .8em;
+  left: 40%;
+  top: 40%;
+  border: solid #dadada;
+  border-width: 0px 0px 3px 3px;
+  transform:rotate(-135deg);
+  transition: transform 0.3s;
+}
+.todo-input__form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.todo-input__input {
+  grid-column: 2/3;
+  padding: 0 30px;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 100;
+  
+}
+.todo-input__input::placeholder {
+  color: #dadada;
+}
+.todo-input__input:focus {
+  outline: none;
+}

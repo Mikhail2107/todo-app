@@ -1,0 +1,26 @@
+.todo-list__container {
+  display: 100%;
+}
+
+.todo-list__menu {  
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.todo-item {
+  list-style: none;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-bottom:1px solid #dadada;
+}
+.todo-list__input {
+  width: 80%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.todo-list__input:focus {
+  outline: none;
+}

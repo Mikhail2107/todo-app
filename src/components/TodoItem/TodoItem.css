@@ -1,0 +1,70 @@
+.todo-item {
+  list-style: none;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-bottom:1px solid #dadada;
+}
+
+.todo-item__label {
+  display: grid;
+  grid-template-columns: 3vw 1fr;
+  align-items: center; 
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px; 
+}
+.todo-item__input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.todo-item__checkbox {
+  display: inline-block;
+  grid-column: 1/2;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.todo-item__input:checked ~ .todo-item__checkbox {
+  background-color: inherit;
+  border-color: #65b7a4;
+}
+
+.todo-item__checkbox::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  width: .5em;
+  height: 1em;
+  border: solid #65b7a4;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg) skew(10deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.todo-item__input:checked ~ .todo-item__checkbox::after {
+  opacity: 1;
+}
+.todo-item__title {  
+  grid-column: 2/3;
+}
+.todo-item__title {
+  font-size: 1.5vw;
+  color: #333;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.todo-item__title.title--checked {
+  text-decoration-line: line-through;
+  color: #dadada;
+}

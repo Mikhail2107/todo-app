@@ -1,0 +1,13 @@
+.todo-title__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-title__text {
+  color: #e8d6d5;
+  font-size: 4vw;
+  font-weight: 300;
+  letter-spacing: 1vw;
+  line-height: 5vw;
+  margin: 1vw 0;
+}
