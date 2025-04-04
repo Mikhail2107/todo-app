@@ -33,7 +33,7 @@ const TodoInput = ({ showTodoList, createTask, buttonShow }: TodoInputProps) => 
           <input
             type="text"
             className="todo-input__input"
-            placeholder="What did you do"
+            placeholder="What need to be done"
             value={inputValue}
             onChange={handleInputChange}
           />
